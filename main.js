@@ -1,4 +1,5 @@
 
-import { tablaKinezet } from "./feladatok.js"; 
+import { tablaKinezet, babukBeszurasa } from "./feladatok.js"; 
 
 tablaKinezet();
+babukBeszurasa();

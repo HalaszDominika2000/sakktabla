@@ -11,3 +11,21 @@ export function tablaKinezet(){
         
     }
 }
+export function babukBeszurasa() {
+    const BABUK=document.querySelectorAll(".tarolo>div")
+    BABUK.forEach((BABUK) => {
+        BABUK.addEventListener("click", function(){
+            if (!BABUK.querySelector("img")) { /*megnézzük hogy a bábukban van e kép diven belül*/
+                const KEP=document.createElement("img")
+                KEP.src="./feherparasztbabu.png"
+                KEP.alt="feherbabu"
+                KEP.style.height="100%"
+                KEP.style.width="100%"
+                BABUK.appendChild(KEP)
+            }
+        })
+    });
+    
+
+    
+}

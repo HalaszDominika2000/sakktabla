@@ -24,3 +24,4 @@
     grid-template-columns: repeat(8, 50px); /*repeat= ismétel: Nyolc sor 50px, függőleges*/
     grid-template-rows: repeat(8, 50px); /*Vízszintes elrendezés*/
 }
+
