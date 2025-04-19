@@ -5,7 +5,7 @@
     height: 50px;
     width: 50px;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center; /*Középrerakja vízszintesen az elemeket*/
 }
 
@@ -15,7 +15,7 @@
     height: 50px;
     width: 50px;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center; /*Középrerakja vízszintesen az elemeket*/
 }
 
@@ -25,3 +25,9 @@
     grid-template-rows: repeat(8, 50px); /*Vízszintes elrendezés*/
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Középre igazít*/
+    
+}

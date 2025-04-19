@@ -17,10 +17,17 @@ export function babukBeszurasa() {
         BABUK.addEventListener("click", function(){
             if (!BABUK.querySelector("img")) { /*megnézzük hogy a bábukban van e kép diven belül*/
                 const KEP=document.createElement("img")
-                KEP.src="./feherparasztbabu.png"
-                KEP.alt="feherbabu"
-                KEP.style.height="100%"
-                KEP.style.width="100%"
+                if (BABUK.classList.contains("sotet")) { /*Ebben az estben a diveket nézi. classList: megnézi a bábunak a classanak hogy mi van rajta hogy világos vagy sötét. contains: doboz tároló: ennek a tárolónak milyen classa van*/
+                    KEP.src="./feherparasztbabu.png"
+                    KEP.alt="feherbabu"
+                } else {
+                    KEP.src="./feketeparasztbabu.jpg"
+                    KEP.alt="feketebabu"
+                }
+                /*KEP.src="./feherparasztbabu.png"
+                KEP.alt="feherbabu"*/
+                KEP.style.height="70%"
+                KEP.style.width="70%"
                 BABUK.appendChild(KEP)
             }
         })
