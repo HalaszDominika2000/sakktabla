@@ -1,0 +1,26 @@
+
+.sotet {
+    background-color: black;
+    border: 1px solid darkslategrey;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center; /*Középrerakja vízszintesen az elemeket*/
+}
+
+.vilagos {
+    background-color: white;
+    border: 1px solid darkslategrey;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center; /*Középrerakja vízszintesen az elemeket*/
+}
+
+.tarolo {
+    display: grid;
+    grid-template-columns: repeat(8, 50px); /*repeat= ismétel: Nyolc sor 50px, függőleges*/
+    grid-template-rows: repeat(8, 50px); /*Vízszintes elrendezés*/
+}
